@@ -3,12 +3,11 @@
 #include <string.h>
 #include <time.h>
 
-int maxNum = 10;
 int main(void){
     int num = 3;
-    int input;
+    static int maxNum = 10;
+    int input, randomNum;
     char charInput;
-    int randomNum;
     time_t t;
     
     srand((unsigned) time(&t));
